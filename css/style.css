@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: Manrope;
+    font-weight: 600, 800;
+}
+.first-part{
+    background-color: rgba(191, 216, 236, 0.287);
+    height: 60vh;
+    align-items: center;
+    border-bottom-left-radius: 180px;
+}
+.first-heading{
+    font-weight: 550;
+    display: flex; 
+    color: hsl(227, 35%, 25%);
+    justify-content: center;
+    align-items: center;
+}
+.first-p{
+    display: flex; 
+    justify-content: center;
+    color: hsl(225, 20%, 60%);
+    align-items: center;
+    opacity: 0.8;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+.heading p{
+    text-transform: uppercase;
+    float: left;
+    margin: 60px;
+}
+.heading .text{
+    font-weight: 550;
+    color: hsl(225, 20%, 60%);
+}
+.heading .text1{
+    color: hsl(227, 35%, 25%);
+    font-size: 30px;
+    font-weight: 800 !important;
+}
+.heading span{
+    font-weight: normal !important;
+    font-size: 15px;
+    text-transform: lowercase;
+    color: hsl(225, 20%, 60%);
+}
+
+/* ----------------------------- */
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-sec{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 90px;
+    background-color: hsl(230, 100%, 99%); 
+    box-shadow: 1px 1px 35px grey;
+    border-radius: 7px;
+}
+
+/* -------------- MEDIA QUERIES -------------------------- */
+@media only screen and (max-width: 567px){
+    .first-part h1{
+        font-size: 33px;
+    }
+    .heading p{
+        margin: 50px;
+    }
+    .list .btn{
+        display: flex;
+        /* margin-top: -190px !important;
+        margin-left: 240px !important;
+        padding: 10px 20px !important; */
+    }
+    .toggle p{
+        margin: 5px !important;
+    }
+    .discount{
+        padding: 3px 8px !important;
+    }
+}
+@media only screen and (min-width: 768px){
+    .second-sec{
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .second-sec{
+        /* background-color: gold; */
+        width: 50%;
+        height: 500px;
+    }
+    .list .btn{
+        margin-left: 30px !important;
+        margin-top: 50px !important;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .second-sec{
+        width: 50%;
+    }
+} 
+
+/* ----------------------------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 25px;
+    margin-bottom: -7px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: hsl(223, 50%, 87%);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* --------------------- */
+.toggle p{
+    display: flex;
+    display: inline-block;
+    margin: 10px;
+}
+.toggle, .test3{
+    font-weight: 550;
+    color: hsl(227, 35%, 25%);
+}
+.discount{
+    color: hsl(15, 100%, 70%);
+    padding: 3px 15px;
+    border-radius: 50px;
+    background-color: hsl(14, 92%, 95%);
+}
+/* --------------------------- */
+.list ul{
+    float: left;
+    margin: 20px;
+}
+.list li{
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none !important;
+    color: hsl(227, 35%, 25%);
+}
+.fa-check{
+    color: hsl(174,77%,80%);
+}
+.list .btn{
+    background-color: hsl(227, 35%, 25%);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 40px;
+    margin-left: 120px !important;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

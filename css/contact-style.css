@@ -1,0 +1,373 @@
+/*  Generalise */
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+body{
+    color: #CBCBCB;
+    background-color: #4A4E57;
+}
+a{
+    color: #DC3545;
+    outline: none;
+    text-decoration: none !important;
+}
+a:active, a:focus{
+    background: transparent;
+}
+nav, body, input, textarea{
+    font-family: Verdana, Geneva, sans-serif;
+}
+.wrapper{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* Transition Fade. This gives a smooth transition effect to all elements */
+*, *::before, *::after{
+    transition: all 0.2s ease-in-out;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, .heading{
+    font-family: "Fira Code", monospace;
+    margin: 0;
+    line-height: normal;
+    font-weight: normal;
+}
+address{
+    font-style: normal;
+    font-weight: normal;
+}
+
+.font-xs{
+    font-size: 0.8rem;
+}
+/* The .hor-cen class is a generic class used to center align a containing element horizontally. It 
+should be used in conjuction with a second class or ID */
+.hor-cen{
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Hovering effect of .btn */
+.btn.btn-danger:hover{
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+
+img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+    vertical-align: middle;
+}
+/* 
+Additional menu links and social icons
+#secondaryNavbar .navbar-nav .nav-item{
+    display: flex; /* For aligning "|" after each link */
+} */
+
+/* #secondaryNavbar .navbar-nav .nav-item::after{
+    content: "|";
+    margin-left: 10px;
+    align-self: center;
+} */
+
+/* Remove the divider "|" and margin after the last link */
+/* #secondaryNavbar .navbar-nav .nav-item:last-child::after{
+    margin-left: 0;
+    content: "";
+} */
+
+/* breadcrumbs */
+.breadcrumbs{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 79px;
+}
+.breadcrumbs ul li{
+    display: inline-block;
+    margin-right: 17px;
+}
+.breadcrumbs ul li.active a{
+    color: #b9b4c7;
+}
+.breadcrumbs ul li i{
+    margin-right: 17px;
+}
+.breadcrumbs ul li a{
+    color: rgb(126, 130, 143);
+    align-items: center;
+}
+.breadcrumbs ul li a:hover{
+    color: #DC3545;
+}
+
+/* Font Awesome icons */
+.social-icon{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-icon a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    color: #32353C; /* dark grey */
+    background-color: #FFF;
+}
+.social-icon li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+    line-height: normal;
+}
+.social-icon a:hover{
+    color: #FFF !important;
+}
+
+/* Background colors for font awesome icons */
+.faicon-facebook:hover{
+    background-color: #3B5998 !important;
+}
+.faicon-twitter:hover{
+    background-color: #00ACEE !important;
+}
+.faicon-instagram:hover{
+    background-color: #EA4C89 !important;
+}
+.faicon-linkedin:hover{
+    background-color: #0E76A8 !important;
+}
+.faicon-pinterest:hover{
+    background-color: #C8232C !important;
+}
+
+/* Header for text/logo */
+#header header{
+    height: 6rem;
+}
+#header h1{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+#header a{
+    color: inherit;
+}
+#header .t3{
+    font-family: Ubuntu, sans-serif;
+    font-weight: 600;
+}
+#header h1:hover{
+    color: #28A745 !important;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness sm: 576px; md: 768px; lg: 992px; xl: 1200px; */
+@media screen and (max-width: 992px){
+    #header h1{
+        font-size: 3rem;
+    }
+    #header h2{
+        font-size: 1.5rem;
+    }
+    #header .flex-row{
+        flex-direction: column !important;
+    }
+}
+@media screen and (max-width: 576px){
+    #header h2{
+        font-size: 1.15rem;
+    }
+}
+
+/* Navigation/Menu Bar */
+#mainNavbar.navbar .nav-item:hover{
+    background-color: rgba(220, 53, 69, 0.7);
+}
+#mainNavbar.navbar .active{
+    background-color: #DC3545;
+}
+
+/* to remove space on top and bottom of nav links */
+#mainNavbar a.nav-link{
+    padding: 0.8rem;
+}
+#mainNavbar.navbar-dark .navbar-nav .nav-1ink:focus,
+#mainNavbar.navbar-dark .navbar-nav .nav-1ink:hover{
+    color: #FFF;
+}
+
+.dropdown-item{
+    color: #FFF;
+}
+.dropdown-item:hover{
+    background-color: #DC3545;
+    color: #FFF;
+}
+
+
+/* Footer */
+#body-footer{
+    background-color: #32353C;
+}
+#body-footer .linklist li{
+    display: block;
+    margin-bottom: 15px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+#body-footer .linklist li:last-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+#body-footer .contact.linklist li{
+    position: relative;
+    padding-left: 40px;
+}
+#body-footer .contact li *{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+} 
+#body-footer .contact li i{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+#body-footer input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid;
+    border-color: transparent;
+    color: #32353C;
+    background-color: #FFF;
+}
+#copyright p a:hover{
+    color: #FFF;
+}
+#body-footer input:focus{
+    border-color: #DC3545;
+}
+@media screen and (max-width: 768px){
+    #copyright.mx-5{
+        margin: 0 !important;
+    }
+}
+@media screen and (max-width: 567px){
+    #copyright.px-5{
+        padding: 0 !important;
+    }
+}
+
+/* back to top button */
+#backtotop{
+    z-index: 999;
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 100%;
+    text-decoration: none;
+    visibility: hidden; /* hide initially */
+    opacity: 0;
+}
+#backtotop i{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: inherit;
+}
+
+/* Make it visible whwn cover image is scrolled up. .visible is added using JS */
+#backtotop.visible{
+    visibility: visible;
+    opacity: 0.5;
+}
+#backtotop:hover{
+    opacity: 1;
+}
+
+
+/* sticky social media bar------------------------------------ */
+#sticky-social-icon .float-sticky-bar>li{
+    background-color: #222;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 4px 5px;
+    width: 150px;
+    position: fixed;
+    z-index: 999;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: flex-end;
+    left: -105px;
+}
+
+#sticky-social-icon .fab{
+    font-size: 20px;
+    color: #FFF;
+    padding: 10px 0 10px 10px;
+    width: 35px;
+    margin-left: 8px;
+}
+#sticky-social-icon .float-sticky-bar>li:hover{
+    left: 0;
+}
+#sticky-social-icon .float-sticky-bar>li>a{
+    color: #FFF !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px !important;
+    vertical-align: top !important;
+}
+ 
+
+/* position each icons */
+#sticky-social-icon .position-fb{
+    top: 160px;
+}
+#sticky-social-icon .position-tw{
+    top: 212px;
+}
+#sticky-social-icon .position-in{
+    top: 264px;
+}
+#sticky-social-icon .position-li{
+    top: 316px;
+}
+#sticky-social-icon .position-pi{
+    top: 368px;
+}
